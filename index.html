@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/transitionManager.css">
+        <script src="js/libs/modernizr.min.js"></script>
+    </head>
+    <body>
+        <div id="loader">
+        </div>
+        
+        <div id="app">
+            <div id="viewContainer">
+                <div class="view view1"></div>
+                <div class="view view2"></div>
+                <div class="view view3"></div>
+            </div>
+        </div>
+        
+        <script src="js/libs/jquery-1.9.1.js"></script>
+        <script src="js/libs/spin.min.js"></script>
+        <script src="js/transitionManager.js"></script>
+        <script>
+            $(document).ready(function(){
+               $('#app').transitionManager({
+                   startView: 'index.html'
+               });
+            });
+        </script>
+    </body>
+</html>
